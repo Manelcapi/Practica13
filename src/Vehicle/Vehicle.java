@@ -4,6 +4,8 @@ public class Vehicle {
 	private int cilidrades;
 	private int portes;
 	private int velocitat_actual;
+	private int  marxes = 5;
+	private int marxaActual = 0;
 	private static final int velocitat_maxima = 120;
 	public int getCilidrades() {
 		return cilidrades;
@@ -33,5 +35,12 @@ public class Vehicle {
 		if(velocitat_actual >= 10){
 			velocitat_actual -=10;	
 		}
+	}
+	
+	public void pujarMarcha(){
+		System.out.println("Sube");
+	}
+	public void baixarMarcha(){
+		System.out.println("Baja");
 	}
 }
